@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+body { font-family: 'Kumbh Sans', sans-serif; padding-bottom: 50px; }
+
+.price { display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.price-tag { display: flex; align-items: center;}
+.price-tag h1 { font-weight: 700; color: #000000;}
+.price-tag span { background-color: hsl(25, 100%, 94%); margin-left: 20px; color: hsl(26, 100%, 55%); font-weight: 700;}
+.old_price span {color: hsl(219, 9%, 45%); text-decoration:line-through; margin-right: 60px;}
+.input-items {display: flex; justify-content: center; align-items: center; }
+.input-items input {width: 430px; text-align: center; height: 45px; border-radius: 8px; font-weight: 700; 
+    background-color:hsl(223, 64%, 98%); border-color: transparent;}
+.btn { display: flex; justify-content: center;height: 45px; width: 430px; margin: 0 auto; 
+        margin-top: 10px; border-radius: 8px; background-color: hsl(26, 100%, 55%);}
+.cart-btn {display: flex; align-items: center; flex-direction: row; gap: 15px;  
+            text-align: center; color: #ffffff; font-weight: 700;}
+.desc { padding-top: 30px;}
+.title h2 { font-size: 18px; color: hsl(26, 100%, 55%); font-weight: 700;}
+.name h1 {color: #000000; font-weight: 700;}
+.details {width: 100%; max-width: 325px;}
+.details span {font-size: 15px; font-weight: 400; color: hsl(219, 9%, 45%);}
+
+/* SLIDER SECTION*/
+.row {display: grid; grid-template-columns: repeat(4, 1fr); padding-top: 25px; cursor: pointer;}
+.container { position: relative;}
+.prev,
+.next { cursor: pointer; position: absolute; top: 35%; width: auto; padding: 16px; margin-top: -50px; color: white;
+      font-weight: bold; font-size: 20px;border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none; }
+.next { right: 0; border-radius: 3px 0 0 3px; }
+.prev:hover,
+.next:hover { background-color: rgba(255, 230, 230, 0.678); }
+
+.demo { opacity: 0.6; }
+
+.active,
+.demo:hover { opacity: 1; }
+
+
+
+

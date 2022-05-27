@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Ecommerce Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/mdb.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/app.js"></script>
+    
+    
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- Container wrapper -->
+          <div class="container-fluid">
+            <!-- Toggle button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Navbar brand -->
+              
+              <!-- Left links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Collections</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+
+              
+              <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img  src="/images/logo/logo.svg" height="15" alt="Logo" loading="lazy"/>
+            </a>
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <a class="text-reset me-3" href="#">
+                <img src="/images/icons/icon-cart.svg" alt="cart icon">
+              </a>
+
+              
+              <!-- Avatar -->
+              <div class="dropdown">
+                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                  role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  <img src="/images/products/image-avatar.png" class="rounded-circle" height="25"
+                    alt="Black and White Portrait of a Man" loading="lazy"/>
+                </a>
+                
+              </div>
+            </div>
+            
+          </div>
+          
+        </nav>
+
+        <div class="main-gallery">
+          <div class="mySlides">
+            <div class="numbertext"></div>
+              <img src="/images/products/image-product-1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+              <img src="/images/products/image-product-2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+              <img src="/images/products/image-product-3.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+              <img src="/images/products/image-product-4.jpg" style="width:100%">
+          </div>
+        
+          
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)"><img src="/images/icons/icon-previous.svg" alt="Previous"></a>
+          <a class="next" onclick="plusSlides(1)"><img src="/images/icons/icon-next.svg" alt="Next"></a>
+        
+          
+        
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="/images/products/image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt="Product One">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/products/image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)" alt="Product Two">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/products/image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)" alt="Product Three">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/products/image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)" alt="Product Four">
+            </div>
+          </div>
+            
+          
+          
+          
+        </div> 
+        
+        
+
+
+        <div class="desc">
+          <div class="title">
+            <h2>SNEAKER COMPANY</h2>
+          </div>
+          <div class="name">
+            <h1>Fall Limited Edition <br> Sneakers</h1>
+          </div>
+          <div class="details">
+            <span>These low-profile sneakers are your perfect
+                  casual wear companion. Featuring a durable
+                  rubber outer sole, they'll withstand everything
+                  the weather can offer.
+            </span>
+          </div>
+        </div>
+        
+
+        <div class="price">
+          <div class="price-tag">
+            <h1>$125.00</h1>
+            <span>50%</span>
+          </div>
+          <div class="old_price">
+            <span>$250.00</span>
+          </div> 
+        </div>
+
+        <form class="input-items">
+          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+          <input type="number" id="number" value="0" />
+          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+        </form>
+
+        <div class="btn"> 
+          <a href="#" class="cart-btn"><img src="/images/icons/icon-cart.svg" alt="#">Add to cart</a>
+        </div>
+
+
+          
+
+
+
+
+
+
+        
+
+      </div>
+      
+    </div>
+    
+
+   
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
