@@ -15,179 +15,248 @@
   <body>
     
     <div class="container">
-      <div class="content">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <!-- Container wrapper -->
-          <div class="container-fluid">
-            <!-- Toggle button -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="flex">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
             </button>
-
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <!-- Navbar brand -->
-              
-              <!-- Left links -->
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Collections</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Men</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Women</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-
-              
-              <!-- Left links -->
-            </div>
-            <!-- Collapsible wrapper -->
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
-              <img  src="/images/logo/logo.svg" height="15" alt="Logo" loading="lazy"/>
+              <img  src="/images/logo/logo.svg" alt="Logo" width="120" />
             </a>
-            <!-- Right elements -->
-            <div class="d-flex align-items-center">
-              <!-- Icon -->
-              <a class="text-reset me-3" href="#">
-                <img src="/images/icons/icon-cart.svg" alt="cart icon">
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex align-items-center">
+            <a class="text-reset me-3" href="#" id="shopping-cart" >
+              <img src="/images/icons/icon-cart.svg" alt="cart icon"  >
+            </a>
+            <div class="dropdown">
+              <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                <img src="/images/products/image-avatar.png" class="rounded-circle" height="25"
+                  alt="Black and White Portrait of a Man" loading="lazy"/>
               </a>
+            </div>
+          </div>
 
-              
-              <!-- Avatar -->
-              <div class="dropdown">
-                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
-                  role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                  <img src="/images/products/image-avatar.png" class="rounded-circle" height="25"
-                    alt="Black and White Portrait of a Man" loading="lazy"/>
-                </a>
+          <!-- SHOPPING CART OVERLAY -->
+          <div class="modal-overlay">
+            <div class="cart-modal">  
+              <i id="close-btn" class="fas fa-times"></i>
+              <h1 class="cart-is-empty">Cart is empty</h1>
+              <div class="product-rows"></div>
+              <div class="total">
+                <h1 class="cart-total">TOTAL</h1>
+                  <span class="total-price">$0</span>
+                    <button class="purchase-btn">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+          <!-- SHOPPING CART OVERLAY END -->
+
+        </div>
+      </nav>
+      <div class="content">
+        <div class="section-a">
+          
+          <div class="main-gallery">
+            <div class="top-gallery">
+              <div class="mySlides">
+                <img src="/images/products/image-product-1.jpg" onclick="openModal();currentSlide(1)"  style="width:100%" class="product-image">
+              </div>
                 
+            
+              <div class="mySlides">
+                <img src="/images/products/image-product-2.jpg" onclick="openModal();currentSlide(2)" style="width:100%" class="product-image">
+              </div>
+                
+            
+              <div class="mySlides">
+                <img src="/images/products/image-product-3.jpg" onclick="openModal();currentSlide(3)" style="width:100%" class="product-image">
+              </div>
+              
+              <div class="mySlides">
+                <img src="/images/products/image-product-4.jpg" onclick="openModal();currentSlide(4)" style="width:100%" class="product-image">
+              </div>
+                
+              <div class="arrow"> 
+                <a class="prev" onclick="plusSlides(-1)"><img src="/images/icons/icon-previous.svg" alt="Previous"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="/images/icons/icon-next.svg" alt="Next"></a>
+              </div>
+
+            </div>
+
+            
+            
+
+            
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="/images/products/image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt="Product One">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/products/image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)" alt="Product Two">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/products/image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)" alt="Product Three">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/products/image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)" alt="Product Four">
+              </div>
+            </div>
+          </div> 
+          <!-- MAIN GALLERY SECTION END   -->
+        </div>
+          <!-- SECTION A ENDS HERE -->
+
+          <div class="section-b">
+            <div class="desc">
+              <div class="title">
+                <h2>SNEAKER COMPANY</h2>
+              </div>
+              <div class="name">
+                <h1>Fall Limited Edition <br> Sneakers</h1>
+              </div>
+              <div class="details">
+                <span>These low-profile sneakers are your perfect
+                      casual wear companion. Featuring a durable
+                      rubber outer sole, they'll withstand everything
+                      the weather can offer.
+                </span>
               </div>
             </div>
             
-          </div>
-          
-        </nav>
+    
+            <div class="price">
+              <div class="price-tag">
+                <h1 class="product-price">$125.00</h1>
+                <span>50%</span>
+              </div>
+              <div class="old_price">
+                <span>$250.00</span>
+              </div> 
+            </div>
+    
+            <div class="input-items">
+              <div>
+                <input type="number" id="number" value="0"/>
+              </div> 
+              
+              <div class="value">
+                <span class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><img src="/images/icons/icon-minus.svg" alt="Icon Minus"></span>
+                <span class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><img src="/images/icons/icon-plus.svg" alt="Icon Plus"></span>
+              </div>
 
-        <div class="main-gallery">
-          <div class="mySlides">
-            <div class="numbertext"></div>
-              <img src="/images/products/image-product-1.jpg" style="width:100%">
-          </div>
+              <div class="btn"> 
+                <a href="#" class="cart-btn"><img src="/images/icons/icon-cart.svg" alt="#">Add to cart</a>
+              </div>
+
+              
+            </div>
+    
+            
+  
+          </div>        
         
-          <div class="mySlides">
-            <div class="numbertext"></div>
-              <img src="/images/products/image-product-2.jpg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext"></div>
-              <img src="/images/products/image-product-3.jpg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext"></div>
-              <img src="/images/products/image-product-4.jpg" style="width:100%">
-          </div>
         
           
         
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)"><img src="/images/icons/icon-previous.svg" alt="Previous"></a>
-          <a class="next" onclick="plusSlides(1)"><img src="/images/icons/icon-next.svg" alt="Next"></a>
-        
           
         
-          <!-- Thumbnail images -->
-          <div class="row">
-            <div class="column">
-              <img class="demo cursor" src="/images/products/image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt="Product One">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/products/image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)" alt="Product Two">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/products/image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)" alt="Product Three">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/products/image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)" alt="Product Four">
-            </div>
-          </div>
+          
             
           
           
           
-        </div> 
-        
-        
-
-
-        <div class="desc">
-          <div class="title">
-            <h2>SNEAKER COMPANY</h2>
-          </div>
-          <div class="name">
-            <h1>Fall Limited Edition <br> Sneakers</h1>
-          </div>
-          <div class="details">
-            <span>These low-profile sneakers are your perfect
-                  casual wear companion. Featuring a durable
-                  rubber outer sole, they'll withstand everything
-                  the weather can offer.
-            </span>
-          </div>
-        </div>
-        
-
-        <div class="price">
-          <div class="price-tag">
-            <h1>$125.00</h1>
-            <span>50%</span>
-          </div>
-          <div class="old_price">
-            <span>$250.00</span>
-          </div> 
-        </div>
-
-        <form class="input-items">
-          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><img src="/images/icons/icon-minus.svg" alt="Icon Minus"></div>
-          <input type="number" id="number" value="0" />
-          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><img src="/images/icons/icon-plus.svg" alt="Icon Plus"></div>
-        </form>
-
-        <div class="btn"> 
-          <a href="#" class="cart-btn"><img src="/images/icons/icon-cart.svg" alt="#">Add to cart</a>
-        </div>
-
-
           
 
 
+            
+        
+          
+           
 
+            
+              
 
+              
+              
+            
+            
+            
+              
+
+              
+              
+            
+
+        
+        
 
 
         
-
+        
+        
+        
+        
+        
+        
+        
+        
       </div>
+      <!-- CONTENT DIV ENDS HERE -->
       
+      <div id="myModal" class="modal">
+        <span class="close cursor" id="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="slides">
+            <img src="/images/products/image-product-1.jpg" style="width:100%" class="modal-image">
+          </div>
+            
+        
+          <div class="slides">
+            <img src="/images/products/image-product-2.jpg" style="width:100%" class="modal-image">
+          </div>
+            
+        
+          <div class="slides">
+            <img src="/images/products/image-product-3.jpg" style="width:100%" class="modal-image">
+          </div>
+          
+          <div class="slides">
+            <img src="/images/products/image-product-4.jpg" style="width:100%" class="modal-image">
+          </div>
+
+         
+
+        </div>
+      </div>
+          
+
+
+       
+
+        
+
     </div>
     
 
