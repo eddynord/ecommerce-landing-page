@@ -57,45 +57,54 @@
               </a>
             </div>
           </div>
-
-          <!-- SHOPPING CART OVERLAY -->
-          <div class="modal-overlay">
-            <div class="cart-modal">  
-              <i id="close-btn" class="fas fa-times"></i>
-              <h1 class="cart-is-empty">Cart is empty</h1>
-              <div class="product-rows"></div>
-              <div class="total">
-                <h1 class="cart-total">TOTAL</h1>
-                  <span class="total-price">$0</span>
-                    <button class="purchase-btn">BUY NOW</button>
-              </div>
-            </div>
-          </div>
-          <!-- SHOPPING CART OVERLAY END -->
-
         </div>
       </nav>
+
+      <!-- SHOPPING CART OVERLAY -->
+      <div class="modal-overlay">
+        <div class="cart-modal">  
+          <i id="close-btn" class="fas fa-times"></i>
+          <h1 class="cart-is-empty">Cart</h1>
+            <div class="cart-desc">
+            
+            <a href="#"><img src="/images/products/thumb1.webp" alt="Thumbnail 1" width="80"></a>
+            <span>Fall Limited Edition Sneakers</span>
+            <a href="#" class="remove-item"><img src="/images/icons/icon-delete.svg" alt=""></a>
+
+            </div>
+          
+          
+          <div class="total">
+            <!-- <h1 class="cart-total">TOTAL</h1> -->
+              <!-- <span class="total-price">$0</span> -->
+                <button class="purchase-btn">CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+      <!-- SHOPPING CART OVERLAY END -->
+          
+
       <div class="content">
         <div class="section-a">
           
           <div class="main-gallery">
             <div class="top-gallery">
               <div class="mySlides">
-                <img src="/images/products/image-product-1.jpg" onclick="openModal();currentSlide(1)"  style="width:100%" class="product-image">
+                <img src="/images/products/main1.webp" onclick="openModal();currentSlide(1)"  style="width:100%" class="product-image">
               </div>
                 
             
               <div class="mySlides">
-                <img src="/images/products/image-product-2.jpg" onclick="openModal();currentSlide(2)" style="width:100%" class="product-image">
+                <img src="/images/products/main2.webp" onclick="openModal();currentSlide(2)" style="width:100%" class="product-image">
               </div>
                 
             
               <div class="mySlides">
-                <img src="/images/products/image-product-3.jpg" onclick="openModal();currentSlide(3)" style="width:100%" class="product-image">
+                <img src="/images/products/main3.webp" onclick="openModal();currentSlide(3)" style="width:100%" class="product-image">
               </div>
               
               <div class="mySlides">
-                <img src="/images/products/image-product-4.jpg" onclick="openModal();currentSlide(4)" style="width:100%" class="product-image">
+                <img src="/images/products/main4.webp" onclick="openModal();currentSlide(4)" style="width:100%" class="product-image">
               </div>
                 
               <div class="arrow"> 
@@ -108,26 +117,28 @@
             
             
 
-            
+            <!-- THUMBNAIL SECTION -->
             <div class="row">
               <div class="column">
-                <img class="demo cursor" src="/images/products/image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt="Product One">
+                <img class="demo cursor" src="/images/products/thumb1.webp" style="width:100%" onclick="currentSlide(1)" alt="Product One">
               </div>
               <div class="column">
-                <img class="demo cursor" src="/images/products/image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)" alt="Product Two">
+                <img class="demo cursor" src="/images/products/thumb2.webp" style="width:100%" onclick="currentSlide(2)" alt="Product Two">
               </div>
               <div class="column">
-                <img class="demo cursor" src="/images/products/image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)" alt="Product Three">
+                <img class="demo cursor" src="/images/products/thumb3.webp" style="width:100%" onclick="currentSlide(3)" alt="Product Three">
               </div>
               <div class="column">
-                <img class="demo cursor" src="/images/products/image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)" alt="Product Four">
+                <img class="demo cursor" src="/images/products/thumb4.webp" style="width:100%" onclick="currentSlide(4)" alt="Product Four">
               </div>
             </div>
           </div> 
           <!-- MAIN GALLERY SECTION END   -->
         </div>
           <!-- SECTION A ENDS HERE -->
-
+          
+          
+          <!-- SECTION B STARTS HERE -->
           <div class="section-b">
             <div class="desc">
               <div class="title">
@@ -169,98 +180,40 @@
               <div class="btn"> 
                 <a href="#" class="cart-btn"><img src="/images/icons/icon-cart.svg" alt="#">Add to cart</a>
               </div>
+            </div>
+          </div> 
+          <!-- SECTION A ENDS HERE -->
 
               
-            </div>
+          
+      </div>
+      <!-- CONTENT DIV ENDS HERE -->
     
             
   
-          </div>        
-        
-        
-          
-        
-          
-        
-          
-            
-          
-          
-          
-          
-
-
-            
-        
-          
-           
-
-            
-              
-
-              
-              
-            
-            
-            
-              
-
-              
-              
-            
-
-        
-        
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- CONTENT DIV ENDS HERE -->
+      
+      <!-- MODAL FOR LIGHTBOX -->
       
       <div id="myModal" class="modal">
         <span class="close cursor" id="close" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="slides">
-            <img src="/images/products/image-product-1.jpg" style="width:100%" class="modal-image">
+            <img src="/images/products/main1.webp" style="width:100%" class="modal-image">
           </div>
-            
-        
           <div class="slides">
-            <img src="/images/products/image-product-2.jpg" style="width:100%" class="modal-image">
+            <img src="/images/products/main2.webp" style="width:100%" class="modal-image">
           </div>
-            
-        
           <div class="slides">
-            <img src="/images/products/image-product-3.jpg" style="width:100%" class="modal-image">
+            <img src="/images/products/main3.webp" style="width:100%" class="modal-image">
           </div>
-          
           <div class="slides">
-            <img src="/images/products/image-product-4.jpg" style="width:100%" class="modal-image">
+            <img src="/images/products/main4.webp" style="width:100%" class="modal-image">
           </div>
-
-         
-
         </div>
       </div>
-          
-
-
-       
-
-        
-
-    </div>
+      <!-- MODAL FOR LIGHTBOX END -->
     
-
-   
+    </div>
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
