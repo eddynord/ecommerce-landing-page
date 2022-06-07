@@ -87,17 +87,95 @@ cartModalOverlay.addEventListener('click', (e) => {
 
 
 
-// // // add products to cart
+// var quantityInputs = document.getElementById('number')
+//     for (var i = 0; i < quantityInputs.length; i++) {
+//         var input = quantityInputs[i]
+//         input.addEventListener('change', quantityChanged)
+//     }
+
+
+// var addToCartButtons = document.querySelector('.cart-btn')
+//     for (var i = 0; i < addToCartButtons.length; i++) {
+//         var button = addToCartButtons[i]
+//         button.addEventListener('click', addToCartClicked)
+//     }
+
+
+// function quantityChanged(event) {
+//       var input = event.target
+//       if (isNaN(input.value) || input.value <= 0) {
+//           input.value = 1
+//       }
+//       updateCartTotal()
+//   }
+  
+//   function addToCartClicked(event) {
+//       var button = event.target
+      
+     
+//       var price = shopItem.querySelector('.final-price')[0].innerText
+      
+//       addItemToCart( price)
+//       updateCartTotal()
+//   }
+
+ 
+//     var cartRowContents = `
+//         <div class="cart-item cart-column">
+//             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+//             <span class="cart-item-title">${title}</span>
+//         </div>
+//         <span class="cart-price cart-column">${price}</span>
+//         <div class="cart-quantity cart-column">
+//             <input class="cart-quantity-input" type="number" value="1">
+//             <button class="btn btn-danger" type="button">REMOVE</button>
+//         </div>`
+//     cartRow.innerHTML = cartRowContents
+//     cartItems.append(cartRow)
+//     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+//     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+// }
+
+// function updateCartTotal() {
+//     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+//     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+//     var total = 0
+//     for (var i = 0; i < cartRows.length; i++) {
+//         var cartRow = cartRows[i]
+//         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+//         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+//         var price = parseFloat(priceElement.innerText.replace('$', ''))
+//         var quantity = quantityElement.value
+//         total = total + (price * quantity)
+//     }
+//     total = Math.round(total * 100) / 100
+//     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+// }
+
+
+
 // Quantity Functions
-// let initialQt = 1;
-// document.querySelector(".cart-btn").addEventListener("click", () => {
+//     let initialQt = 1;
+//     initialQt = document.querySelector(".number") ;
+//     document.querySelector(".cart-btn").addEventListener("click", () => {
 //     initialQt++;
-//     document.querySelector(".number").innerHTML = initialQt;
+    
 //     let price = 125 * initialQt;
-//     document.querySelector(".product-price").innerHTML = "$" + actualPrice + ".00";
-    
-    
+//     document.querySelector(".final-price").innerHTML = "$" + ".00";
 // })
+
+
+// document.querySelector("#increase").addEventListener("click", () => {
+//   initialQt++;
+//   if (initialQt >= 1) {
+//       initialQt = document.querySelector(".number").innerHTML;
+//       let price = 125 * initialQt;
+//       document.querySelector(".final-price").innerHTML = "$" + actualPrice + ".00";
+     
+//   }
+// })
+    
+    
 // document.querySelector("#decrease").addEventListener("click", () => {
 //     initialQt--;
 //     if (initialQt >= 1) {
