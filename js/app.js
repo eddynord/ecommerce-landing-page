@@ -86,6 +86,15 @@ cartModalOverlay.addEventListener('click', (e) => {
 })
 
 
+// let cartIcon = document.getElementById('shopping-cart');
+// let productCounter = document.getElementById('number');
+// let addToCart = document.querySelector('.cart-btn');
+// let finalPrice = document.querySelector('.final-price')
+
+
+
+
+
 
 // var quantityInputs = document.getElementById('number')
 //     for (var i = 0; i < quantityInputs.length; i++) {
